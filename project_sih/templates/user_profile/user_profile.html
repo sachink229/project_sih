@@ -1,0 +1,3 @@
+{% extends "sitewide/sitewide_base.html" %} {% load staticfiles %} {% block body_content %} {% if user.is_authenticated %} {% include "sitewide/post_login_base.html" %} {% else %} {% include "sitewide/pre_login_navbar.html" %} {% endif %}
+<p>This is user profile page</p>
+{% endblock body_content %}
